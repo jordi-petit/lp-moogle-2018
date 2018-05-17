@@ -7,8 +7,8 @@ The µoogle project for GEI-LP (2018 edition)
 
 This page describes the µoogle project for the LP course at GEI. µoogle stands for
 "micro Google" and your task is to implement the core of a simple system to
-crawl web pages and answer queries from users, by reporting which pages
-contain fulfill their queries.
+crawl web pages and answer queries from users, by reporting which crawled pages
+fulfill their queries.
 
 
 ## Demo
@@ -31,7 +31,7 @@ There are two kinds of queries:
 - Simple queries only contain a word. The answer should include all crawled pages
   that contain the given word.
 
-- Complex queries can be express conjunctions and disjunctions. Conjunctions
+- Complex queries can express conjunctions and disjunctions. Conjunctions
   are written with `[]` expressions and disjunctions with `()` expressions.
   In these expressions, words are written in single quotes (this makes it easier
   for you!). For instance:
@@ -141,9 +141,9 @@ below. The `moogle.py` module has three parts:
 
 This part is meant to define all the types and functions you need.
 
-It also must define an `authors()` function that returns a string with the
-names or name of the authors of the assigment. This information is displayed
-in the home page. Simply modify this function to include *your* name(s)!
+It also must define an `authors()` function that returns a string with your
+name. This information is displayed in the home page of your web server and
+makes the project look very cool.
 
 
 ### Crawler part
@@ -185,7 +185,6 @@ You have to:
 - Decide which data structure will represent your database
 - Implement the `crawler()` function
 - Implement the `answer()` function
-- (Also, write a `README.md` file with the documentation of your work)
 
 In order to do this, you possibly want to define types, auxiliary functions...
 
@@ -218,7 +217,7 @@ clean_words("Jordi Jordi!    Llorenç#Martí") -> "jordi jordi llorenç"
 
 # Usefull information
 
-The following code snippet reads a page through its url and prints its title,
+The following code snippet reads a page through its URL and prints its title,
 text and all its links. Error handling has been ommitted.
 
 ```python
