@@ -40,7 +40,7 @@ There are two kinds of queries:
   that contain these three words (each of them should appear in the page).
 
   - `('orange', 'lemon')` is a query that should return all pages
-  that contain at least one of these three words (one of them them should appear in the page).
+  that contain at least one of these two words (one of them them should appear in the page).
 
   Expressions can be arbitrarely nested. For instance:
 
