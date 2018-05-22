@@ -65,7 +65,7 @@ The architecture of the system is as follows:
     browser.
 
     Additionally, the web server also offers some sample files
-    under the `static` directory. Point your bowser to
+    under the `static` directory. Point your browser to
     `http://localhost:5000/static/index.html` to browse their root.
     This figure shows the relations between these
     pages:
@@ -94,7 +94,8 @@ The architecture of the system is as follows:
 
 -   The `crawler.py` module is the command line interface tool that
     is used to crawl the web and index its pages. In order to
-    execute it, use a command such as `./crawler.py --url http://localhost:5000/static/index.html --maxdist 4`, which specifies a starting page and a maximum crawling distance.
+    execute it, use a command such as `./crawler.py --url http://localhost:5000/static/index.html --maxdist 4`,
+    which specifies a starting page and a maximum crawling distance.
     Use `./crawler.py --help` to get more options.
 
     This module is already implemented, **do not modify it**.
@@ -151,10 +152,10 @@ makes the project look very cool.
 This part is meant to define all the types and functions you need in order to
 perform the crawling phase.
 
-It must define a function `crawler(url, maxdist)`
-that crawls the web starting from `url`, following up to `maxdist` links and
-returns a database (it is up to you to define the type and value
-of this database).
+It must define a function `crawler(url, maxdist)` that crawls the web starting
+from `url` and visiting all availables pages that are not further thank
+`maxdist` links  from the initial page.  This function must return a database
+(it is up to you to define the type and value of this database).
 
 This part already defines a `store(db, filename)` function that
 writes a database `db` in file `filename` using `pickle`.
@@ -301,7 +302,7 @@ pip3 install -r requirements.txt
 
 Heu de lliurar la vostra pràctica per correu electrònic al Racó.
 Només heu de lliurar el fitxer `moogle.py`. Res més. Sense comprimir.
-Només el fitxer `moogle.py`.
+Només el fitxer `moogle.py`, amb tota la documentació pertinent dins seu.
 
 L'ús de tabuladors en el codi queda
 prohibit.
@@ -320,7 +321,7 @@ tuples, llistes, diccionaris i conjunts n'hauríeu de tenir prou.
 
 - Haureu de preveure un tractament mínim d'errors amb `try ... except`.
 
-- Només cal que exploreu pàgines amb el sufix `.html` o `.htm`.
+- Només cal que exploreu pàgines HTML.
 
 - Si voleu fer servir algun mòdul "exòtic", consulteu-ho abans amb els
 vostres professors.
