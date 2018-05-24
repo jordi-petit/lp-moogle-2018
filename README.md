@@ -229,10 +229,10 @@ url = "http://localhost:5000/static/index.html"
 response = urllib.request.urlopen(url)
 page = response.read()
 soup = BeautifulSoup(page, "html.parser")
-print(soup.title.string)
+print(soup.title.text)
 print(soup.get_text())
 for link in soup.find_all("a"):
-    print(link.get("href"), link.string)
+    print(link.get("href"), link.text)
 ```
 
 The following code snippet show how to save some data
@@ -311,7 +311,7 @@ A més, es valorarà que el vostre fitxer `moogle.py` segueixi
 utilitzar el paquet `pep8` o http://pep8online.com/ per assegurar-vos
 que seguiu aquestes regles d'estíl.
 
-El termini de lliurament és XXX.
+El termini de lliurament és el 25 de juny a les 23:59:59 CET.
 
 
 ## Consells
