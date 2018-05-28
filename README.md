@@ -316,6 +316,10 @@ El termini de lliurament és el 25 de juny a les 23:59:59 CET.
 
 ## Consells
 
+- Se suposa que la fase 1 es fa de forma relativament infrequent. En canvi, se suposa 
+que a la fase 2, hi ha molts usuaris fent moltes cerques. Per tant, cal optimitzar
+la velocitat de resposta de les cerques.
+
 - Segurament no us cal definir classes pròpies. Amb
 tuples, llistes, diccionaris i conjunts n'hauríeu de tenir prou.
 
