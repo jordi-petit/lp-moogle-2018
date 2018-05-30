@@ -330,3 +330,8 @@ tuples, llistes, diccionaris i conjunts n'hauríeu de tenir prou.
 - Si voleu fer servir algun mòdul "exòtic", consulteu-ho abans amb els
 vostres professors.
 
+- Webs de proves: Podeu provar el vostre rojecte sobre qualsevol web, però aquí en teniu un parell d'exemples:
+
+    1. Exemple 1: http://www.foodsubs.com amb distància 5. Agafant només les pàgines dins del domini i amb extensió .html surten unes 1000 pàgines diferents en un parell de minuts de crawling. 
+
+    2. Exemple 2: Una altra possibilitat és començar a https://docs.python.org/index.html i usar distància 5. Apareixen unes 500 pàgines .html amb 4000 arcs entre elles en uns tres minuts de crawling.
