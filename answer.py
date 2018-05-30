@@ -15,14 +15,13 @@ def main():
         epilog=moogle.authors(),
     )
 
-    parser.add_argument("-q", "--query", type=str, help="query (use quotes for more than one word")
+    parser.add_argument("-q", "--query", type=str, help="query (use single quotes for more than one word")
     parser.add_argument("-d", "--database", type=str, help="filename of the database", default="moogle.dat")
 
     args = parser.parse_args(sys.argv[1:])
 
     db = moogle.load(args.database)
-    query = util.clean_words(args.query)
-    answer = moogle.answer(db, query)
+    answer = moogle.answer(db, args.query)
     pprint.pprint(answer)
 
 
